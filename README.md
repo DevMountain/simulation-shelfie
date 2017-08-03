@@ -31,3 +31,7 @@ Good luck and work hard!
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
 
 # Technical Requirements
+
+* User can select Shelf A -D from the homepage.
+  * When a user selects a shelf they should be navigated to a view that displays the bins in that shelf.
+* 
