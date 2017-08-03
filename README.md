@@ -10,22 +10,22 @@ Good luck and work hard!
 
 # Application Design
 
-Homepage
+## Homepage
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/home.png" />
 
-Shelf 
+## Shelf - Bin List
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/shelf.png" />
 
-Bin
+## Bin - Item Details
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/bin.png" />
 
-Add to Bin
+## Add to Bin
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/create.png" />
 
-Edit Bin
+## Edit Bin
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
