@@ -32,6 +32,11 @@ Good luck and work hard!
 
 # Technical Requirements
 
-* User can select Shelf A -D from the homepage.
+* Homepage
+  * User can select Shelf A - D.
   * When a user selects a shelf they should be navigated to a view that displays the bins in that shelf.
-* 
+* Shelf - Bin List
+  * The header at the top should act as a breadcrumb. Clicking on the `div` that contains the company's logo should navigate the user back to the homepage.
+  * All five bins should be listed.
+    * If a bin is empty it should display `+ Add to inventory`.
+    * If a bin is not empty empty it should display `Bin #` with `#` being the number of the bin.
