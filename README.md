@@ -10,6 +10,12 @@ After completing the project, host your project on HOST SERVICE TO BE DETERMINED
 
 Good luck and work hard!
 
+# Color Palette & Font
+
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/colors.png" />
+
+<a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font</a>
+
 # Application Design
 
 ## Homepage
@@ -33,7 +39,6 @@ Good luck and work hard!
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/create.png" />
 
 # Technical Requirements - Front-end
-
 
 ## Homepage
 * User can select Shelf A - D.
