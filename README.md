@@ -6,6 +6,8 @@ This project is designed to replicate what you might receive on the job. There w
 
 With this guidance only structure, we believe this project will showcase what you can do as an individual and how you can work with a team at this point of the program. Because of this, we feel this project will be worth putting in your portfolio.
 
+After completing the project, host your project on HOST SERVICE TO BE DETERMINED and provide your mentor with the link.
+
 Good luck and work hard!
 
 # Application Design
