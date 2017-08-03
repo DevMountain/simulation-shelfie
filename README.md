@@ -35,36 +35,37 @@ Good luck and work hard!
 # Technical Requirements - Front-end
 
 
-### Homepage
+## Homepage
 * User can select Shelf A - D.
 * When a user selects a shelf they should be navigated to a view that displays the bins in that shelf.
 
-<br />
+## Shelf - Bin List
 
-* Shelf - Bin List
-  * The header at the top should act as a breadcrumb. Clicking on the `div` that contains the company's logo should navigate the user back to the homepage.
-  * The front-end should call the back-end for the `bins`'s data.
-  * All five bins should be listed.
-    * If a bin is empty it should display `+ Add inventory`.
-      * A user should be able to click on this `div` and be navigated to the `Add to Bin` view.
-    * If a bin is not empty empty it should display `Bin #` with `#` being the number of the bin.
-      * A user should be able to click on this `div` and be navigated to the `Bin - Inventory Details` view.
-* Bin - Inventory Details / Edit Bin 
-  * The header at the top should act as a breadcrumb.
-    * The `div` for the company logo should navigate to the homepage.
-    * The `div` for the `Shelf` should navigate back to the `Bin List` for that shelf.
-      * Example: `Shelf A` should navigate to the `Bin List` for shelf A.
-  * The input fields should not be editable on load of the view.
-  * A user should be able to click on the `EDIT` button.
-    * The input fields should become editable.
-    * The edit button should become a save button.
-  * A user should be able to click on the `SAVE` button to save changes made to the inventory.
-    * The input fields should become un-editable.
-    * The save button should become an edit button.
-    * This should update the inventory for that bin in the database.
-  * A user should be able to click on the `DELETE` button to delete inventory from a bin.
-    * This should remove the inventory from the bin in the database.
-    * This should navigate the user back to the `Bin List` for the shelf. 
+* The header at the top should act as a breadcrumb. Clicking on the `div` that contains the company's logo should navigate the user back to the homepage.
+* The front-end should call the back-end for the `bins`'s data.
+* All five bins should be listed.
+  * If a bin is empty it should display `+ Add inventory`.
+    * A user should be able to click on this `div` and be navigated to the `Add to Bin` view.
+  * If a bin is not empty empty it should display `Bin #` with `#` being the number of the bin.
+    * A user should be able to click on this `div` and be navigated to the `Bin - Inventory Details` view.
+
+
+## Bin - Inventory Details / Edit Bin 
+* The header at the top should act as a breadcrumb.
+  * The `div` for the company logo should navigate to the homepage.
+  * The `div` for the `Shelf` should navigate back to the `Bin List` for that shelf.
+    * Example: `Shelf A` should navigate to the `Bin List` for shelf A.
+* The input fields should not be editable on load of the view.
+* A user should be able to click on the `EDIT` button.
+  * The input fields should become editable.
+  * The edit button should become a save button.
+* A user should be able to click on the `SAVE` button to save changes made to the inventory.
+  * The input fields should become un-editable.
+  * The save button should become an edit button.
+  * This should update the inventory for that bin in the database.
+* A user should be able to click on the `DELETE` button to delete inventory from a bin.
+  * This should remove the inventory from the bin in the database.
+  * This should navigate the user back to the `Bin List` for the shelf. 
 * Add to Bin
   * A user should be able to add a name and price for the inventory.
   * If you want to use custom images, add a field to add an image.
