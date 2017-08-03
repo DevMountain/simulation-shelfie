@@ -51,3 +51,6 @@ Good luck and work hard!
   * A user should be able to click on the `EDIT` button.
     * The input fields should become editable.
     * The edit button should become a save button.
+  * A user should be able to click on the `SAVE` button to save changes made to the inventory.
+    * The input fields should become un-editable.
+    * The save button should become an edit button.
