@@ -78,6 +78,7 @@ Good luck and work hard!
 
 * Shelves
   * GET - `/api/shelf/:id` - Returns an array of bin objects. If there is no bin, returns `null`.
+    * Example: `[ {}, {}, null, null, {} ]`.
     * `:id` is the shelf id. Which can be 'A', 'B', 'C', or 'D'.
 * Bins
   * GET - `/api/bin/:id` - Returns a bin object. If there is no bin, returns `null`.
