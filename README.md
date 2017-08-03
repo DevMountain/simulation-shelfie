@@ -18,11 +18,11 @@ Good luck and work hard!
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/shelf.png" />
 
-## Bin - Inventory Details
+## Bin - Inventory Details / Edit Bin
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/bin.png" />
 
-## Bin - Edit Bin
+<br />
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
 
@@ -42,7 +42,7 @@ Good luck and work hard!
       * A user should be able to click on this `div` and be navigated to the `Add to Bin` view.
     * If a bin is not empty empty it should display `Bin #` with `#` being the number of the bin.
       * A user should be able to click on this `div` and be navigated to the `Bin - Inventory Details` view.
-* Bin - Inventory Details
+* Bin - Inventory Details / Edit Bin 
   * The header at the top should act as a breadcrumb.
     * The `div` for the company logo should navigate to the homepage.
     * The `div` for the `Shelf` should navigate back to the `Bin List` for that shelf.
