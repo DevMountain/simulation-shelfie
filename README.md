@@ -75,9 +75,11 @@ Good luck and work hard!
 * Bins
   * GET - `/api/bin/:id` - Returns a bin object. If there is no bin, returns `null`.
     * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
-  * PUT - `/api/bin/:id` - Updates and returns a bin object. This endpoint should only be accessible if there is a bin object.
+  * PUT - `/api/bin/:id` - Updates and returns a bin object. 
+    * This endpoint should only be accessible if there is a bin object.
     * `:id` is the shelf and bin id combined. Examples: 'A5', 'B1', 'C3'.
   * DELETE - `/api/bin/:id` - Deletes a bin object. Returns nothing.
     * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
-  * POST `/api/bin/:id` - Creates a new bin object. This endpoint should only be accessible if there is not a bin object already. 
+  * POST `/api/bin/:id` - Creates a new bin object. Returns nothing.
+    * This endpoint should only be accessible if there is not a bin object already. 
     * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
