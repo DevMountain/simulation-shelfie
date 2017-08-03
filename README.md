@@ -69,6 +69,11 @@ Good luck and work hard!
 
 # Technical Requirements - Back-end
 
+* The back-end should be created using express. 
+* Massive should be used to establish a connection to your database.
+* Express.static should be used to server your front-end files.
+  * HINT: Use `npm build` to get production ready front-end files.
+
 * Shelves
   * GET - `/api/shelf/:id` - Returns an array of bin objects. If there is no bin, returns `null`.
     * `:id` is the shelf id. Which can be 'A', 'B', 'C', or 'D'.
