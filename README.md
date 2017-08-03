@@ -18,7 +18,7 @@ Good luck and work hard!
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/shelf.png" />
 
-## Bin - Item Details
+## Bin - Inventory Details
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/bin.png" />
 
@@ -38,5 +38,7 @@ Good luck and work hard!
 * Shelf - Bin List
   * The header at the top should act as a breadcrumb. Clicking on the `div` that contains the company's logo should navigate the user back to the homepage.
   * All five bins should be listed.
-    * If a bin is empty it should display `+ Add to inventory`.
+    * If a bin is empty it should display `+ Add inventory`.
+      * A user should be able to click on this `div` and be navigated to the `Add to Bin` view.
     * If a bin is not empty empty it should display `Bin #` with `#` being the number of the bin.
+      * A user should be able to click on this `div` and be navigated to the `Bin - Inventory Details` view.
