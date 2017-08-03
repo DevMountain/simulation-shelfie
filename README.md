@@ -70,8 +70,14 @@ Good luck and work hard!
 # Technical Requirements - Back-end
 
 * Shelves
-  * GET - 
+  * GET - `/api/shelf/:id` - Returns an array of bin objects. If there is no bin, returns `null`.
+    * `:id` is the shelf id. Which can be 'A', 'B', 'C', or 'D'.
 * Bins
-  * GET -
-  * 
-
+  * GET - `/api/bin/:id` - Returns a bin object. If there is no bin, returns `null`.
+    * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
+  * PUT - `/api/bin/:id` - Updates a bin object. This endpoint should only be accessible if there is a bin object. Returns the updated bin object
+    * `:id` is the shelf and bin id combined. Examples: 'A5', 'B1', 'C3'.
+  * DELETE - `/api/bin/:id` - Deletes a bin object. Returns nothing.
+    * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
+  * POST `/api/bin/:id` - Creates a new bin object. This endpoint should only be accessible if there is not a bin object already. 
+    * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
