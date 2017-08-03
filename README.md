@@ -34,9 +34,13 @@ Good luck and work hard!
 
 # Technical Requirements - Front-end
 
-* Homepage
-  * User can select Shelf A - D.
-  * When a user selects a shelf they should be navigated to a view that displays the bins in that shelf.
+
+### Homepage
+* User can select Shelf A - D.
+* When a user selects a shelf they should be navigated to a view that displays the bins in that shelf.
+
+<br />
+
 * Shelf - Bin List
   * The header at the top should act as a breadcrumb. Clicking on the `div` that contains the company's logo should navigate the user back to the homepage.
   * The front-end should call the back-end for the `bins`'s data.
