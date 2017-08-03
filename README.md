@@ -30,13 +30,14 @@ Good luck and work hard!
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/create.png" />
 
-# Technical Requirements
+# Technical Requirements - Front-end
 
 * Homepage
   * User can select Shelf A - D.
   * When a user selects a shelf they should be navigated to a view that displays the bins in that shelf.
 * Shelf - Bin List
   * The header at the top should act as a breadcrumb. Clicking on the `div` that contains the company's logo should navigate the user back to the homepage.
+  * The front-end should call the back-end for the `bins`'s data.
   * All five bins should be listed.
     * If a bin is empty it should display `+ Add inventory`.
       * A user should be able to click on this `div` and be navigated to the `Add to Bin` view.
@@ -54,3 +55,9 @@ Good luck and work hard!
   * A user should be able to click on the `SAVE` button to save changes made to the inventory.
     * The input fields should become un-editable.
     * The save button should become an edit button.
+    * This should update the inventory for that bin in the database.
+  * A user should be able to click on the `DELETE` button to delete inventory from a bin.
+    * This should remove the inventory from the bin in the database.
+    * This should navigate the user back to the `Bin List` for the shelf. 
+* Add to Bin
+  * 
