@@ -74,7 +74,7 @@ Good luck and work hard!
 * Express.static should be used to server your front-end files.
   * HINT: Use `npm build` to get production ready front-end files.
 
-<br />
+## Endpoints
 
 * Shelves
   * GET - `/api/shelf/:id` - Returns an array of bin objects. If there is no bin, returns `null`.
