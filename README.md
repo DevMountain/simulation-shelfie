@@ -66,3 +66,12 @@ Good luck and work hard!
   * A user should be able to click on `+ Add Inventory`.
     * This should add inventory to the bin in the database.
     * This should navigate the user back to the `Bin List` for the shelf.
+
+# Technical Requirements - Back-end
+
+* Shelves
+  * GET - 
+* Bins
+  * GET -
+  * 
+
