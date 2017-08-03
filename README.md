@@ -22,13 +22,13 @@ Good luck and work hard!
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/bin.png" />
 
+## Bin - Edit Bin
+
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
+
 ## Add to Bin
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/create.png" />
-
-## Edit Bin
-
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
 
 # Technical Requirements
 
@@ -44,7 +44,10 @@ Good luck and work hard!
       * A user should be able to click on this `div` and be navigated to the `Bin - Inventory Details` view.
 * Bin - Inventory Details
   * The header at the top should act as a breadcrumb.
-    * The `div` for the company logo should navigate the homepage.
+    * The `div` for the company logo should navigate to the homepage.
     * The `div` for the `Shelf` should navigate back to the `Bin List` for that shelf.
       * Example: `Shelf A` should navigate to the `Bin List` for shelf A.
-  * 
+  * The input fields should not be editable on load of the view.
+  * A user should be able to click on the `EDIT` button.
+    * The input fields should become editable.
+    * The edit button should become a save button.
