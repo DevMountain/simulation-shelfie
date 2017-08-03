@@ -42,3 +42,9 @@ Good luck and work hard!
       * A user should be able to click on this `div` and be navigated to the `Add to Bin` view.
     * If a bin is not empty empty it should display `Bin #` with `#` being the number of the bin.
       * A user should be able to click on this `div` and be navigated to the `Bin - Inventory Details` view.
+* Bin - Inventory Details
+  * The header at the top should act as a breadcrumb.
+    * The `div` for the company logo should navigate the homepage.
+    * The `div` for the `Shelf` should navigate back to the `Bin List` for that shelf.
+      * Example: `Shelf A` should navigate to the `Bin List` for shelf A.
+  * 
