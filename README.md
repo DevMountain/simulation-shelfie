@@ -29,3 +29,5 @@ Good luck and work hard!
 ## Edit Bin
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
+
+# Technical Requirements
