@@ -12,7 +12,7 @@ Good luck and work hard!
 
 # Color Palette & Font
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/colors.png" />
+<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/colors.png" />
 
 <a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font</a>
 
