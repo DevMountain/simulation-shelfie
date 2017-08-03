@@ -60,4 +60,6 @@ Good luck and work hard!
     * This should remove the inventory from the bin in the database.
     * This should navigate the user back to the `Bin List` for the shelf. 
 * Add to Bin
-  * 
+  * A user should be able to add a name and price for the inventory.
+  * If you want to use custom images, add a field to add an image.
+    * However, you can use this website to generate placeholder images: `http://lorempixel.com/200/200/business/`
