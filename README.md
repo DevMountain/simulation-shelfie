@@ -14,7 +14,7 @@ Good luck and work hard!
 
 <img src="https://github.com/DevMountain/simulation-1/blob/master/assets/colors.png" />
 
-<h2><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font</a></h2>
+<b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font</a></b>
 
 # Application Design
 
