@@ -1,0 +1,3 @@
+INSERT INTO shelves
+VALUES (default)
+RETURNING *;
