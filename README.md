@@ -1,6 +1,6 @@
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250" align="right">
 
-# Live Example
+# Awesome example
 
 <a href="https://shelfie.devmountain.com/">Shelfie</a>
 
