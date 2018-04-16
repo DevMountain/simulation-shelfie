@@ -1,9 +1,5 @@
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250" align="right">
 
-# Live Example
-
-<a href="https://shelfie.devmountain.com/">Shelfie</a>
-
 # Project Summary
 
 This project is designed to replicate what you might receive on the job. There won't be any guided instruction on what you'll need to do. We will only provide you with design specifications and technical requirements. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
@@ -16,7 +12,7 @@ Good luck and work hard!
 
 # Color Palette & Font
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/colors.png" />
+<img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/colors.png" />
 
 <b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font - Open Sans</a></b>
 
@@ -24,23 +20,23 @@ Good luck and work hard!
 
 ## Homepage
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/home.png" />
+<img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/views/home.png" />
 
 ## Shelf - Bin List
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/shelf.png" />
+<img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/views/shelf.png" />
 
 ## Bin - Inventory Details / Edit Bin
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/bin.png" />
+<img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/views/bin.png" />
 
 <br />
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/edit.png" />
+<img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/views/edit.png" />
 
 ## Add to Bin
 
-<img src="https://github.com/DevMountain/simulation-1/blob/master/assets/views/create.png" />
+<img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/views/create.png" />
 
 # Technical Requirements - Front-end
 
