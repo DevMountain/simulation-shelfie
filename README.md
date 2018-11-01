@@ -2,13 +2,17 @@
 
 # Project Summary
 
-This project is designed to replicate what you might receive on the job. There won't be any guided instruction on what you'll need to do. We will only provide you with design specifications and technical requirements. Your mentors have also been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
-
-With this specification/requirement only structure, we believe this project will showcase what you can do as an individual and how you can work with a team at this point of the program. Because of this, we feel this project will be worth putting in your portfolio.
-
-After completing the project, host your project on `https://zeit.co/` and provide your mentor with the link.
+This project is designed to replicate what you might receive on the job. We will only provide you with design specifications and technical requirements. This project is a chance for you to combine and showcase the skills you've learned so far.
 
 Good luck and work hard!
+
+# Expectations
+
+This is a modifed version of the original simulation given in the classroom during week 3. We are asking you to build a much more robust project that will strech your skills and hopefully help you build your understanding. You will have 3 weeks to build this project. It is expected that you do your best to solve as many problems bugs as you can in your code base. The most learning comes from your own efforts to understand what the code is doing. Your mentor is always willing to help, but once you leave DevMountain it will be on you to contine your learning and solve problems.
+
+After the 3 weeks are over a mentor will look over your code and you will be expected to walk them through how different parts are working. Use this as an opritunity to learn about the parts that you are not sure about. The mentor will push you to explain as much as they can in an attempt to find holes in your understanding so we can better teach you and get you ready for the job market.
+
+If you have any questions about any of the expectation for this sim or your time in async feel free to reach out to a mentor or instructor and we will be happy to answer them.
 
 # Color Palette & Font
 
@@ -34,32 +38,47 @@ Good luck and work hard!
 
 <img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/views/edit.png" />
 
-## Add to Bin
+## Add Bin
 
 <img src="https://github.com/DevMountain/simulation-1-async/blob/master/assets/views/create.png" />
 
 # Technical Requirements - Front-end
 
 ## Homepage
+
 * User can select Shelf A - D.
 * When a user selects a shelf they should be navigated to a view that displays the bins in that shelf.
 
-## Shelf - Bin List
+## Nav Bar
 
-* The header at the top should act as a breadcrumb. Clicking on the `div` that contains the company's logo should navigate the user back to the homepage.
-* The front-end should call the back-end for the `bins`'s data.
-* All five bins should be listed.
-  * If a bin is empty it should display `+ Add inventory`.
-    * A user should be able to click on this `div` and be navigated to the `Add to Bin` view.
-  * If a bin is not empty empty it should display `Bin #` with `#` being the number of the bin.
-    * A user should be able to click on this `div` and be navigated to the `Bin - Inventory Details` view.
-
-
-## Bin - Inventory Details / Edit Bin 
+* The nav bar should be its own component rendered on the routes component.
+* It will need to use `withRouter` so it has access to the routing params.
+* The title of the componet should reflect the page it is on.
 * The header at the top should act as a breadcrumb.
   * The `div` for the company logo should navigate to the homepage.
   * The `div` for the `Shelf` should navigate back to the `Bin List` for that shelf.
     * Example: `Shelf A` should navigate to the `Bin List` for shelf A.
+* If the user selects the company logo it should take them to the `shelf list` page.
+
+## Shelf List
+
+* The Front end should call the back-end for the `shelf's` data.
+* The shelfs buttons should each be their own component.
+* The shelf should display the name of the shelf.
+* It should only show as many shels as there are in the database.
+* Bellow the shelf buttons make a `create shelf` button that brings you to the `add shelf` page.
+
+## Bin List
+
+* The front-end should call the back-end for the `bins`'s data based on the shelf the user selected.
+* Each bin button shold be its own component.
+* The button should display the name of the item in the bin.
+* Only Show as many bins as are on the shelf.
+* Below all the listed bins there should be a button to add a new bin.
+  * A user should be able to click on this button and be navigated to the `Add to Bin` view.
+
+## Bin - Inventory Details / Edit Bin
+
 * The input fields should not be editable on load of the view.
 * A user should be able to click on the `EDIT` button.
   * The input fields should become editable.
@@ -70,9 +89,9 @@ Good luck and work hard!
   * This should update the inventory for that bin in the database.
 * A user should be able to click on the `DELETE` button to delete inventory from a bin.
   * This should remove the inventory from the bin in the database.
-  * This should navigate the user back to the `Bin List` for the shelf. 
+  * This should navigate the user back to the `Bin List` for the shelf.
 
-## Add to Bin
+## Add Bin
 
 * A user should be able to add a name and price for the inventory.
 * If you want to use custom images, add a field to add an image.
@@ -83,28 +102,29 @@ Good luck and work hard!
 
 # Technical Requirements - Back-end
 
-* The back-end should be created using express. 
+* The back-end should be created using express.
 * Massive should be used to establish a connection to your database.
-* Express.static should be used to server your front-end files.
-  * HINT: Use `npm build` to get production ready front-end files.
 
 ## Endpoints
 
 * Shelves
-  * GET - `/api/shelf/:id` - Returns an array of bin objects. If there is no bin, returns `null`.
-    * Example: `[ {}, {}, null, null, {} ]`.
-    * `:id` is the shelf id. Which can be 'A', 'B', 'C', or 'D'.
+  * GET - `/api/shelf` - Returns an array of shelf objects.
+    * Example: `[{}, {}, {}]`
+  * POST - `/api/shelf` - Creates a new shelf object. Returns nothing.
+    * This will need a req.body that contains the name of the shelf.
+  * GET - `/api/shelf/:id` - Returns an array of bin objects.
+    * Example: `[ {}, {}, {} ]`.
+    * `:id` is the shelf id.
 * Bins
   * GET - `/api/bin/:id` - Returns a bin object. If there is no bin, returns `null`.
-    * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
-  * PUT - `/api/bin/:id` - Updates and returns a bin object. 
+    * `:id` is the bin id. Examples: 2, 4, 5.
+  * PUT - `/api/bin/:id` - Updates and returns a bin object.
     * This endpoint should only be accessible if there is a bin object.
-    * `:id` is the shelf and bin id combined. Examples: 'A5', 'B1', 'C3'.
+    * `:id` is the shelf id to update.
   * DELETE - `/api/bin/:id` - Deletes a bin object. Returns nothing.
-    * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
-  * POST `/api/bin/:id` - Creates a new bin object. Returns nothing.
-    * This endpoint should only be accessible if there is not a bin object already. 
-    * `:id` is the shelf and bin id combined. Examples: 'A2', 'C4', 'B2'.
+    * `:id` is the bin id combined.
+  * POST `/api/bin` - Creates a new bin object. Returns nothing.
+    * This will need a body with the image, title, and price.
 
 ## Contributions
 
